@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/index.scss">
-    <title>Diploma</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./css/trello.css"/>
+    <title>Diploma project</title>
 </head>
-<body>
 
-    <div id="addTodoListDiv">
-        <input id="addTodoListInput" class="comment">
-        <button id="addTodoListButton" class="btn-save">Add new to-do list</button>
-    </div>
-    
-    <div id="root"></div>
-    
-    <script src="./js/index.js" type="module"></script>
+<body>
+<div class="navigation-bar">
+    Trello
+</div>
+<div id="container"></div>
+
+<div id="container-main"></div>
+
+<div id="card-edit">
+    <div id="card-edit-close"><img src="./img/cross.png"></div>
+    <form>
+        <div id="card-edit-inputs">
+            <div>
+                <label>Title:</label>
+                <input id="card-edit-title">
+            </div>
+        </div>
+        <div>
+            <input id="card-edit-delete" type="button" value="Delete">
+            <input id="card-edit-submit" type="submit" value="Save">
+        </div>
+    </form>
+</div>
+
+<script src="./js/card-delete.js"></script>
+<script src="./js/card-edit.js"></script>
+<script src="./js/add-card.js"></script>
+<script src="./js/list-title-form.js"></script>
+<script src="./js/card-title-form.js"></script>
+<script src="./js/card.js"></script>
+<script src="./js/list.js"></script>
+<script src="./js/add-list.js"></script>
+<script src="./js/trello-main.js"></script>
+
 </body>
 </html>
